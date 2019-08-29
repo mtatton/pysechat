@@ -43,7 +43,7 @@ if __name__ == "__main__":
 
   ssock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
   # this has no effect, why ?
-  #server_socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 2)
+  ssock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
   ssock = ssl.wrap_socket(ssock,
     keyfile="key.pem",
     certfile="cert.pem",
