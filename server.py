@@ -93,7 +93,7 @@ if __name__ == "__main__":
           if data:
             broadcast_data(sock, str(sock.getpeername()[0]) + "> " + data)
         except:
-          broadcast_data(sock, "CLIENT (%s, %s) IS OFFLINE" % addr)
+          broadcast_data(sock, "|--- CLIENT (%s, %s) IS OFFLINE" % addr)
           print ("CLIENT (%s, %s) IS OFFLINE " % addr)
           #CONNECTION_LIST.remove(sock) # This caused crashes
           sock.close()
