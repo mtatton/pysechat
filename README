@@ -1,0 +1,6 @@
+PYTHON SSL TCP CHAT SERVER
+
+* ssl socket chat server
+* with basic curses support
+* kept as simple as possible
+
